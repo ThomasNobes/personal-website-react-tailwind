@@ -105,6 +105,9 @@ export const ContactSection = () => {
                                 <a href="https://www.youtube.com/@lowerboundYT" target="_blank">
                                     <Youtube />
                                 </a>
+                                <a href="https://www.youtube.com/@upperboundYT" target="_blank">
+                                    <Youtube />
+                                </a>
                                 <a href="#" target="_blank">
                                     <Instagram />
                                 </a>
