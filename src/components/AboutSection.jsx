@@ -1,13 +1,32 @@
 import { BookOpenText, Code, Youtube, Briefcase } from "lucide-react";
 import { useState } from "react";
 
+function getYearsDifference(targetDate) {
+    const now = new Date();
+    const date = new Date(targetDate);
+
+    let years = now.getFullYear() - date.getFullYear();
+
+    const hasHadAnniversaryThisYear =
+    now.getMonth() > date.getMonth() ||
+    (now.getMonth() === date.getMonth() && now.getDate() >= date.getDate());
+
+    if (!hasHadAnniversaryThisYear) {
+    years--;
+    }
+
+    return years;
+}
+
 export const AboutSection = () => {
     const [cvDownloaded, setCvDownloaded] = useState(false);
 
     const handleCvDownload = () => {
         setCvDownloaded(true);
     };
-
+    
+    const years = getYearsDifference("2020-01-01");
+    
     return (
         <section id="about" className="py-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
@@ -20,7 +39,7 @@ export const AboutSection = () => {
                         <h3 className="text-2xl font-semibold"> Passionate Pathfinding Educator <br />& Researcher</h3>
                         
                         <p className="text-muted-foreground">
-                            With 5 years of experience teaching and researching pathfinding algorithms, 
+                            With {years} years of experience teaching and researching pathfinding algorithms, 
                             I am dedicated to making complex concepts accessible and engaging.
                         </p>
                         
@@ -50,19 +69,6 @@ export const AboutSection = () => {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <BookOpenText className="h-6 w-6  text-primary"/>
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-semibold text-lg"> Research Publications</h4>
-                                    <p className="text-muted-foreground">
-                                        Designing state-of-the-art voxel benchmarks and 3D pathfinding algorithms.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
                                     <Youtube className="h-6 w-6  text-primary"/>
                                 </div>
                                 <div className="text-left">
@@ -79,9 +85,22 @@ export const AboutSection = () => {
                                     <Briefcase className="h-6 w-6  text-primary"/>
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg"> PhD Student & Educator</h4>
+                                    <h4 className="font-semibold text-lg"> PhD Graduate & Educator</h4>
                                     <p className="text-muted-foreground">
                                         Expert knowledge of pathfinding algorithms and professional experience in teaching.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="gradient-border p-6 card-hover">
+                            <div className="flex items-start gap-4">
+                                <div className="p-3 rounded-full bg-primary/10">
+                                    <BookOpenText className="h-6 w-6  text-primary"/>
+                                </div>
+                                <div className="text-left">
+                                    <h4 className="font-semibold text-lg"> Research Publications</h4>
+                                    <p className="text-muted-foreground">
+                                        Designing state-of-the-art voxel benchmarks and 3D pathfinding algorithms.
                                     </p>
                                 </div>
                             </div>
