@@ -5,7 +5,7 @@ const projects = [
         id: 1,
         title: "Upper Bound on YouTube",
         description: "An educational YouTube channel focused on pathfinding algorithms and related topics.",
-        image: "/projects/upperbound.png",
+        image: "/projects/upperbound.jpeg",
         tags: ["YouTube", "Education", "Pathfinding"],
         paperUrl: "https://www.youtube.com/@upperboundYT",
     },
@@ -13,7 +13,7 @@ const projects = [
         id: 2,
         title: "Lower Bound on YouTube",
         description: "An educational YouTube channel focused on pathfinding algorithms and related topics.",
-        image: "/projects/lowerbound.png",
+        image: "/projects/lowerbound.jpg",
         tags: ["YouTube", "Education", "Pathfinding"],
         paperUrl: "https://www.youtube.com/@lowerboundYT",
     }
