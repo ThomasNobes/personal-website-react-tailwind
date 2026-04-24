@@ -21,9 +21,9 @@ export const HeroSection = () => {
                     </h1>
                     
                     <p>
-                        I am interested in <span className="text-primary-emphasis">Pathfinding Algorithms</span> and create <span className="text-primary-emphasis">educational YouTube videos</span> on adjacent topics.
-                        I completed my PhD in Computer Science on 3D Voxel-Based Pathfinding Algorithms at Monash University in 2025.
-                        I teach a Masters subject on Planning and Automated Reasoning. I am the first author of JPS-3D.
+                        I research <span className="text-primary-emphasis">Pathfinding Algorithms</span> and create <span className="text-primary-emphasis">educational YouTube videos</span> on adjacent topics.
+                        <br></br>I completed my <span className="text-primary-emphasis">PhD</span> in Computer Science on 3D Voxel-Based Pathfinding Algorithms at Monash University, 2025.
+                        <br></br>I teach Masters subjects on Planning and Automated Reasoning, and Foundations of AI.
                     </p>
                     
                     <p>
