@@ -27,13 +27,18 @@ export const PublicationsSection = () => {
     return <section id="publications" className="py-24 px-4 relative">
         <div className="containter mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Featured <span className="text-primary">Publications</span>
+                First-Author <span className="text-primary">Publications</span>
             </h2>
             
             <p className="text-center mb-12 text-muted-foreground mb-12 max-w-2xl mx-auto">
+                Published in the International Symposium on Combinatorial Search (SoCS) in 2022 and 2023 respectively.
+                
+                SoCS is one of, if not <i>the</i> premier conference for heuristic-search research.
+            </p>
+            {/* <p className="text-center mb-12 text-muted-foreground mb-12 max-w-2xl mx-auto">
                 Here are some of my favourite publications. These publications showcase my enthusiasm 
                 and expertise in developing and teaching advanced algorithms.
-            </p>
+            </p> */}
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 {publications.map((publication, key) => (
